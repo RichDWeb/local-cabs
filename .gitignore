@@ -1,0 +1,6 @@
+# Dependency directories (usually these are managed by package managers)
+node_modules
+# Dependency management lock files
+package-lock.json
+# npm cache directory
+.npm
