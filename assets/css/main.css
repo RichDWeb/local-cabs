@@ -3636,6 +3636,10 @@ video {
   height: 5rem;
 }
 
+.group:hover .group-hover\:h-32 {
+  height: 8rem;
+}
+
 .group:hover .group-hover\:-rotate-45 {
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3790,6 +3794,10 @@ video {
 
   .md\:leading-\[60px\] {
     line-height: 60px;
+  }
+
+  .group:hover .md\:group-hover\:h-20 {
+    height: 5rem;
   }
 }
 
