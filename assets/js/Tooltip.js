@@ -26,8 +26,8 @@ class Tooltip {
     }
 
     positionTooltip() {
-        this.tooltip.style.top = "-44px";
-        this.tooltip.style.right = "-120px";
+        this.tooltip.style.top = "-54px";
+        this.tooltip.style.right = "-50px";
     }
 }
 
