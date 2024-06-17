@@ -53,7 +53,6 @@ class Dropdown {
           this.menu.classList.add('hidden');
       }, 300);
       if (!this.isMobileView()) {
-     
       }
       this.icon.classList.remove('rotate-180');
       this.isVisible = false;

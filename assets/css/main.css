@@ -2751,6 +2751,14 @@ video {
   padding-top: 2rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2854,8 +2862,8 @@ video {
   font-size: 18px;
 }
 
-.text-\[50px\] {
-  font-size: 50px;
+.text-\[48px\] {
+  font-size: 48px;
 }
 
 .text-base {
@@ -2881,6 +2889,14 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
 }
 
 .font-bold {
@@ -3762,6 +3778,10 @@ video {
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:text-\[18px\] {
+    font-size: 18px;
   }
 
   .md\:leading-\[54px\] {
