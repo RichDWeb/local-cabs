@@ -22,8 +22,6 @@ class MobileMenu {
         this.menu.classList.add('hidden');
       }, 300);
 
-      document.body.classList.remove('overflow-hidden');
-
     }
     else {
       this.menu.classList.remove('hidden');
@@ -34,7 +32,7 @@ class MobileMenu {
       }, 10);
       this.iconMenu.classList.add('hidden');
       this.iconClose.classList.remove('hidden');
-      document.body.classList.add('overflow-hidden');
+      
     }
     this.isVisible= !this.isVisible;
   }

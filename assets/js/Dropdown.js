@@ -39,7 +39,7 @@ class Dropdown {
           this.menu.classList.remove('opacity-0', 'scale-95');
           this.menu.classList.add('opacity-100', 'scale-100');
       }, 10);
-      document.body.classList.add('overflow-hidden');
+      
       this.icon.classList.add('rotate-180');
       this.isVisible = true;
     }
@@ -53,7 +53,7 @@ class Dropdown {
           this.menu.classList.add('hidden');
       }, 300);
       if (!this.isMobileView()) {
-        document.body.classList.remove('overflow-hidden');
+     
       }
       this.icon.classList.remove('rotate-180');
       this.isVisible = false;
