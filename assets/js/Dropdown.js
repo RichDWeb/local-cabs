@@ -17,7 +17,7 @@ class Dropdown {
   }
 
   handleButtonClick(event) {
-    if (window.innerWidth < 768) {
+    if (this.isMobileView) {
         this.toggleMenu(event);
     } else {
         event.stopPropagation();
@@ -33,28 +33,44 @@ class Dropdown {
 
   showMenu(event) {
     event.stopPropagation();
-    if (!this.isVisible) {
+
+
+    if (!this.isVisible && !this.isMobileView()) {
       this.menu.classList.remove('hidden');
       setTimeout(() => {
           this.menu.classList.remove('opacity-0', 'scale-95');
           this.menu.classList.add('opacity-100', 'scale-100');
       }, 10);
-      
+
       this.icon.classList.add('rotate-180');
+      this.button.setAttribute('aria-expanded', 'true');
+      this.isVisible = true;
+    } else if (!this.isVisible && this.isMobileView()) {
+      this.menu.classList.remove('hidden');
+      this.icon.classList.add('rotate-180');
+      this.button.setAttribute('aria-expanded', 'true');
       this.isVisible = true;
     }
   }
 
   hideMenu() {
-    if (this.isVisible) {
+    if (this.isVisible && !this.isMobileView()) {
       this.menu.classList.remove('opacity-100', 'scale-100');
       this.menu.classList.add('opacity-0', 'scale-95');
       setTimeout(() => {
           this.menu.classList.add('hidden');
       }, 300);
-      if (!this.isMobileView()) {
-      }
+
       this.icon.classList.remove('rotate-180');
+      this.button.setAttribute('aria-expanded', 'false');
+      this.isVisible = false;
+    } else if (this.isVisible && this.isMobileView()) {
+      setTimeout(() => {
+          this.menu.classList.add('hidden');
+      }, 30);
+
+      this.icon.classList.remove('rotate-180');
+      this.button.setAttribute('aria-expanded', 'false');
       this.isVisible = false;
     }
   } 
@@ -63,7 +79,6 @@ class Dropdown {
     if (!this.isMobileView()) {
       this.leaveTimeout = setTimeout(() => this.hideMenu(), 300);
     }
-
   }
 
   cancelHideMenu() {
@@ -71,8 +86,10 @@ class Dropdown {
   }
 
   handleClickOutside(event) {
-    if (this.isVisible && !this.button.contains(event.target) && !this.menu.contains(event.target)) {
-        this.hideMenu();
+    if (!this.isMobileView()) {
+      if (this.isVisible && !this.button.contains(event.target) && !this.menu.contains(event.target)) {
+          this.hideMenu();
+      }
     }
   }
 
