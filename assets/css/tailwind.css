@@ -24,6 +24,10 @@
   }
 }
 
+a {
+  @apply cursor-pointer;
+}
+
 .swiper-slide {
   width: 353px !important;
 }
