@@ -2369,6 +2369,10 @@ video {
   border-radius: 0.125rem;
 }
 
+.rounded-none {
+  border-radius: 0px;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2407,6 +2411,11 @@ video {
 .rounded-t {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+}
+
+.rounded-b-full {
+  border-bottom-right-radius: 9999px;
+  border-bottom-left-radius: 9999px;
 }
 
 .rounded-bl {
@@ -2642,6 +2651,18 @@ video {
 
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'assets\/images\/lexi-anderson-G8wPrJyNqWQ-unsplash\.jpg\'\)\] {
+  background-image: url('assets/images/lexi-anderson-G8wPrJyNqWQ-unsplash.jpg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/images\/lexi-anderson-G8wPrJyNqWQ-unsplash\.jpg\'\)\] {
+  background-image: url('../assets/images/lexi-anderson-G8wPrJyNqWQ-unsplash.jpg');
+}
+
+.bg-\[url\(\'\.\/assets\/images\/lexi-anderson-G8wPrJyNqWQ-unsplash\.jpg\'\)\] {
+  background-image: url('./assets/images/lexi-anderson-G8wPrJyNqWQ-unsplash.jpg');
 }
 
 .from-black\/70 {
@@ -4187,6 +4208,11 @@ a {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:rounded-b-3xl {
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
   }
 
   .md\:px-6 {
