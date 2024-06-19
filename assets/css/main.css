@@ -1993,10 +1993,6 @@ video {
   gap: 18px;
 }
 
-.gap-7 {
-  gap: 1.75rem;
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -2536,11 +2532,6 @@ video {
   border-color: rgb(249 250 251 / var(--tw-border-opacity));
 }
 
-.border-light-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(248 250 252 / var(--tw-border-opacity));
-}
-
 .bg-\[\#1B1B1B\] {
   --tw-bg-opacity: 1;
   background-color: rgb(27 27 27 / var(--tw-bg-opacity));
@@ -2918,18 +2909,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pl-7 {
-  padding-left: 1.75rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
-.pb-\[32rem\] {
-  padding-bottom: 32rem;
 }
 
 .text-left {
@@ -4029,6 +4008,10 @@ a {
     line-height: 1.5rem;
   }
 
+  .sm\:leading-7 {
+    line-height: 1.75rem;
+  }
+
   .sm\:leading-\[1\.125rem\] {
     line-height: 1.125rem;
   }
@@ -4039,10 +4022,6 @@ a {
 
   .sm\:leading-\[54px\] {
     line-height: 54px;
-  }
-
-  .sm\:leading-7 {
-    line-height: 1.75rem;
   }
 
   .sm\:underline {
