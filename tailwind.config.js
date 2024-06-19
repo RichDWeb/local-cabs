@@ -16,12 +16,14 @@ module.exports = {
         border: "#cbd5e1",
         alice: "#F1F5F9",
         fiord: "#475569",
-        light: "#fefaef40"
+        light: "#fefaef40",
+        "light-100": "FFF",
+        "light-200": "#f8fafc"
 
       },
 
       animation: {
-        marquee: "marquee 25s linear infinite", // Adjust the duration as needed
+        marquee: "marquee 25s linear infinite",
         marquee2: "marquee2 25s linear infinite",
       },
       keyframes: {
