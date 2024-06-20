@@ -449,7 +449,7 @@ video {
 @font-face {
   font-family: "Lexend";
 
-  src: url(/assets/fonts/Lexend/Lexend-VariableFont_wght.ttf)
+  src: url(../fonts/Lexend/Lexend-VariableFont_wght.ttf)
       format("truetype-variations");
 
   font-weight: 100 900;
@@ -458,7 +458,7 @@ video {
 @font-face {
   font-family: "Inter";
 
-  src: url(/assets/fonts/Inter/Inter-VariableFont_slnt,wght.ttf)
+  src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf)
       format("truetype-variations");
 
   font-weight: 100 900;
@@ -467,7 +467,7 @@ video {
 @font-face {
   font-family: "GochiHand";
 
-  src: url(/assets/fonts/Gochi_Hand/GochiHand-Regular.ttf)
+  src: url(../fonts/Gochi_Hand/GochiHand-Regular.ttf)
       format("truetype");
 
   font-weight: 400;
@@ -2639,10 +2639,6 @@ video {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\'assets\/images\/lexi-anderson-G8wPrJyNqWQ-unsplash\.jpg\'\)\] {
-  background-image: url('assets/images/lexi-anderson-G8wPrJyNqWQ-unsplash.jpg');
-}
-
 .from-black\/70 {
   --tw-gradient-from: rgb(0 0 0 / 0.7) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
@@ -4287,10 +4283,6 @@ a {
 
   .lg\:w-\[600px\] {
     width: 600px;
-  }
-
-  .lg\:max-w-96 {
-    max-width: 24rem;
   }
 
   .lg\:max-w-none {
